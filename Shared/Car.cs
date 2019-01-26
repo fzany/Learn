@@ -1,12 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Text;
 
 namespace Shared
 {
-     public class Car
+    /// <summary>
+    /// Create a class Insurance and add it to the car class as a property
+    /// </summary>
+    /// 
+
+    public class Car
     {
+        public Insurance Insurance { get; set; }
         public string Color { get; set; }
         public string Type { get; set; }
         public string Maufacturer { get; set; }
@@ -16,4 +19,10 @@ namespace Shared
         public DateTime PurchaseData { get; set; }
         public double Milage { get; set; }
     }
+
+    public class Insurance
+    {
+        public string CustomerName { get; set; }
+    }
 }
+

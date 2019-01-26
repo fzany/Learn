@@ -8,8 +8,17 @@ namespace Learn
 {
     internal class Program
     {
+        /// <summary>
+        /// Create a list of cars.
+        /// </summary>
+        
         private static void Main(string[] args)
         {
+            List<Car> Cars = new List<Car>()
+            {
+                new Car(){ Color = "Brown", Insurance =  new Insurance(){ CustomerName = "David"}
+            },
+                };
             //List<User> users = new List<User>() {
             //    new User(){ first_name = "Fermi", gender = Sex.Boy, last_name = "Ade", age = 33 },
             //     new User(){ first_name = "Kingsley", gender = Sex.Boy, last_name = "Phillips", age=10 },
